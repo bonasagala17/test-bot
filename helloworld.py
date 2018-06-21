@@ -1588,7 +1588,7 @@ def clientBot(op):
                     elif msg.toType == 2:
                         to = receiver
                     if settings["autoRead"] == True:
-                        sendMention(sender, "Maaf @!, saya lagi gak on tinggalkan pesan aja", [sender])
+                        client.sendMessage (sender, "Maaf @!, saya lagi gak on tinggalkan pesan aja", [sender])
                     if to in read["readPoint"]:
                         if sender not in read["ROM"][to]:
                             read["ROM"][to][sender] = True
